@@ -25,6 +25,10 @@ const { accessMomer, accessMusicos } = require('../middlewares/accessRole');
 
 const router = express.Router();
 
+router.get('/', (req, res) => {
+    res.json({ message: 'Musico-ll-meet API' });
+});
+
 // registration
 router.post('/api/signup', validate('body', userCreateSchema), controllerHandler(userController.registerUser));
 // login

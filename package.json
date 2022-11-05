@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": ["node index.js", "sqitch deploy"]
+        "start": "node index.js && sqitch deploy"
     },
     "author": "",
     "license": "ISC",

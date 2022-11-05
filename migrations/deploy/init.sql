@@ -19,7 +19,7 @@ CREATE TABLE "candidate_status"(
 CREATE TABLE "users" (
     "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     "name" VARCHAR(100) NOT NULL,
-    "picture_url" TEXT DEFAULT 'https://res.cloudinary.com/dxmyypsrl/image/upload/v1662321133/profile_image/default_image.jpg',
+    "picture_url" TEXT DEFAULT 'https://res.cloudinary.com/dsupyp1qz/image/upload/v1667654396/mom-default-img_aaj0em.jpg',
     "city" VARCHAR(50) NOT NULL,
     "email" TEXT NOT NULL UNIQUE,
     "password" TEXT NOT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE "event"(
     "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     "name" VARCHAR(100) NOT NULL,
     "description" TEXT,
-    "picture_url" TEXT DEFAULT 'https://res.cloudinary.com/dxmyypsrl/image/upload/v1662321133/profile_image/default_image.jpg',
+    "picture_url" TEXT DEFAULT 'https://res.cloudinary.com/dsupyp1qz/image/upload/v1667654396/mom-default-img_aaj0em.jpg',
     "owner_id" INT NOT NULL REFERENCES "users" ("id") ON DELETE CASCADE,
     "address" TEXT,
     "city" TEXT,

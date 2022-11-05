@@ -1,1 +1,3 @@
-MusicO'll Meet Project Back End
+# MusicO'll Meet Project Back End
+This is the project that I did with 3 other students (the final project of our training in the "O'Clock" school).
+The front end repo is here: .....

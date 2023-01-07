@@ -1,7 +1,7 @@
 const { Client } = require('pg');
 
 const client = new Client({
-    connectionString: process.env.HEROKU_POSTGRESQL_YELLOW_URL,
+    connectionString: process.env.DB_URL,
     //ssl: false,
     ssl: {
         rejectUnauthorized: false,
